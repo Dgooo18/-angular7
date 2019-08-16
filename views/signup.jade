@@ -1,0 +1,22 @@
+extends layout.jade
+block contenido
+    center
+        div(class="container")
+            h1 Bienvendo
+            form(action="/users", method="post")
+                div(class="form-group")
+                    labe(for="username") username
+                    input(type="text", name="username",class="form-control")
+                div(class="form-group")
+                    label(for="name") Nombre
+                    input(type="text", name="name",class="form-control")
+                div(class="form-group")
+                    label(for="email") Email
+                    input(type="text", placeholder="email",name="email",id="email",class="form-control")
+                div(class="form-group") Contraseña
+                    input(type="password",name="password", placeholder="pass",id="pass", class="form-control")
+                div(class="form-group")
+                    label(for="pass") Ingrese  nuevamente la contraseña
+                    input(type="password",name="repass" placeholder="repass",id="repass", class="form-control") 
+                div(class="form-group")
+                    input(type="submit", class="btn btn-primary", value="Registrar")
