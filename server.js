@@ -15,7 +15,7 @@ app.set("view engine", "jade");
 //routes
 app.use(express.static('public'));
 
-app.use(bodyParser.json()); //para json
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
